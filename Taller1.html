@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="es"><!--Define el lengueje de la pagina-->
+<head >
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina html</title>
+</head>
+<body style="font-size: 20px; margin: 5%;">
+    <header style="background-color: #1162AC; color: azure;">
+        <div>
+            <h1 align="center"><ins><b>Tutorial HTML</b></ins></h1>
+        </div>
+    </header>
+    <!-- ============================ INTRODUCCION-->
+    <section>
+            <h2>Introducción</h2>
+        <p>
+            A continuación se muestran conceptos básicos para la creación de una estructura web en HTMl.
+            Conoceremos sus sintaxis básica para implementarla en un documento.
+        </p>
+        <h2> ¿Qué es HTML?</h2>
+        <p>
+            Veamos primero la definición de HTMl. Las siglas HTML significa Hyper Text Markup Language o en español Lenguaje de Marcado de Hipertexto. 
+            Este consiste en una series de elementos que le dice a los navegadores como va a mostrarse el contenido en nuestra Web.
+        </p>
+        <div style="background-color: #1162AC; color: #f0ffff;">
+            <h2>Ejemplo de un documento simple en HTML</h2>
+        </div>
+        
+        <pre style="background-color: rgb(193, 193, 193);">
+            <code>
+                &lt;!DOCTYPE html&gt;<!--inicia -->
+                &lt;html&gt;
+                &lt;head&gt;
+                    &lt;title&gt; Mi página &lt;/title&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+                    &lt;h1&gt; Encabezado &lt;/h1&gt;
+                    &lt;p&gt; parrafp &lt;/p&gt;
+                &lt;/body&gt;
+                &lt;/html&gt;
+            </code>
+        </pre>
+        <div style="background-color: #1162AC; color: azure;">
+            <h2><b>Elementos básicos de un documento HTML:</b></h2>
+        </div>
+        
+        <ol>
+            <p>
+                <li><b>&lt;!DOCTYPE html&gt;</b> define el documento como uno HTML</li>
+                <li><b>&lt;html&gt; </b>abre la estructura del HTML</li>
+                <li><b>&lt;head&gt;</b>es la cabecera del HTML. Contiene información sobre la página</li>
+                <li><b>&lt;title&gt;</b> Muestra en la barra del navegador el titulo de la página.
+                <li><b>&lt;body&gt;</b>cuerpo del documento HTML. Aquí colocamos todo el contenido que queremos en nuestra página</li>
+                <li><b>&lt;h&gt;</b>define los encabezados</li>
+                <li><b>&lt;p&gt;</b>define un parrafo en el documento</li>
+            </p>
+        </ol>
+        <h3>Extras</h3>
+        <p> 
+            <ul>
+                <li><b>&lt;pre&gt;</b>mantiene los formatos de tecto del código.</li>
+                <li><b>&lt;code&gt;</b>indica que el texto es codigo</li></p>
+                <li><pre>Ejemplo del texto dentro de un &lt;pre&gt;</pre></li>
+                <li>HTML incluye seis niveles de encabezado: h1, h2, h3, h4, h5, h6. Desde h1 el texto es mas grande y disminuye hasta h6. Ejemplo:
+                    <h1>Texto en h1</h1>
+                    <h2>Texto en h2</h2>
+                    <h3>Texto en h3</h3>
+                    <h4>Texto en h4</h4>
+                    <h5>Texto en h5</h5>
+                </li>
+                <li>Para un comentario o recordatorio: &lt;!-- Aqui va tu comentaro--&gt;.</li>
+                <li>Para un salto de linea usar *br/*</br></li>
+                <li>Para definir una linea Horizontal: &lt;hr/&gt;. Ejemplo:</li>
+                    <hr/><!--linea hrizontal-->
+            </ul>
+        </p>
+        <!-- _________________________________ fomatos de texto -->
+         <div style="background-color: #1162AC; color: azure;">
+            <h2><b>Formatos de Texto:</b></h2>
+         </div>
+        <table border="1">
+            <tr>
+                <td><b>&lt;b&gt; texto en negrita &lt;/b&gt;</b></td>
+                <td><del>&lt;del&gt; texto tachado &lt;/del&gt; </del></td>
+            </tr>
+            <tr>
+                <td><i>&lt;i&gt; texto en cursiva &lt;/i&gt;</i></td>
+                <td><small>*small&gt; texto pequeño &lt;/small&gt;</small></td>
+            </tr>
+            <tr>
+                <td><strong>&lt;strong&gt; texto reforzado &lt;/strong&gt;</strong></td>
+                <td><sub>&lt;sub&gt; texto subindice &lt;/sub&gt;</sub></td>
+            </tr>
+            <tr>
+                <td><sup>&lt;sup&gt; texto superindice &lt;/sup&gt;</sup></td>
+                <td><ins>&lt;ins&gt; texto insertado &lt;/ins&gt;</ins></td>
+            </tr>
+        </table>
+        <!--__________________________________ Tablas-->
+        <div style="background-color: #1162AC; color: azure;">
+            <h2>Tablas</h2>
+        </div>
+        
+        <p>
+            Las tablas HTML permiten a los desarrolladores web organizar los datos en filas y columnas.
+            Para crear una tabla en HTML utilizamos &lt;table&gt;, para las filas &lt;tr&gt; y para las columnas &lt;td&gt;. <br>
+            Ejemplo de codigo: tabla de 1 filas y 2 columnas
+        </p>
+        <pre style="background-color: rgb(193, 193, 193);">
+            <code>
+                &lt;table&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;
+                            fila 1, columna 1
+                        &lt;/td&gt;
+                        &lt;td&gt;
+                            fila 1, columna 2
+                        &lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/table&gt;
+            </code>
+        </pre>
+        <p>
+            Ejemplo de como se vería
+        </p>
+        <table border="1">
+            <tr>
+                <td>
+                    fila 1, columna 1
+                </td>
+                <td>
+                    fila1, columna 2
+                </td>
+            </tr>
+        </table>
+        <!--__________________________________ Listas-->
+        <div style="background-color: #1162AC; color: azure;">
+            <h2>Listas ordenadas y desordenadas</h2>
+        </div>
+        
+        <p>
+            En HTML podemos crear listas ordenadas y listas desordenadas.
+            Para crear listas ordenadas utilizamos &lt;ol&gt; y para colocar sus elementos &lt;li&gt;. <br>
+            Ejemplo de codigo:
+            <pre style="background-color: rgb(193, 193, 193);">
+                <code>
+                    &lt;ol&gt;
+                        &lt;li&gt;
+                            Primero
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            segundo
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            tercero
+                        &lt;/li&gt;
+                    &lt;/ol&gt;
+                </code>
+            </pre> 
+            Ejemplo visula:
+        </p>
+        <ol>
+            <li>
+                Primero
+            </li>
+            <li>
+                Segundo
+            </li>
+            <li>
+                Tercero
+            </li>
+        </ol>
+        <p>
+            Para crear listas desordenadas utilizamos &lt;ul&gt; y para colocar sus elementos &lt;li&gt;. <br>
+            Ejemplo de codigo:
+            <pre style="background-color: rgb(193, 193, 193);">
+                <code>
+                    &lt;ul&gt;
+                        &lt;li&gt;
+                            Arina
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            Pan
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            Azucar
+                        &lt;/li&gt;
+                    &lt;/ul&gt;
+                </code>
+            </pre> 
+            Ejemplo visula:
+        </p>
+        <ul>
+            <li>
+                Arina
+            </li>
+            <li>
+                Pan
+            </li>
+            <li>
+                Azucar
+            </li>
+        </ul>
+    </section>
+    <!-- ==================================================== Fin introduccion-->
+    <!-- ==================================================== Atributos html -->
+    <section>
+        <div style="background-color: #1162AC; color: azure;">
+            <h2><b>Atibutos HTML</b></h2>
+        </div>
+        
+        <p>Los atributos proveen informacion adicional sobre un elemento o estiqueta, a la vez</br>
+        que lo modifica. La mayoria de los atributos tienen un "valor"; el valor modifica el atributo.</p>
+        <ul>
+            <p>
+                <li>Los atributos siempre se especifican en la etiqueta de inicio</li>
+                <li>Los atributos generalmente vienen en pares de nombre/valor como: nombre="valor"</li>
+            </p>
+        </ul>
+        <table border="1">
+            <tr>
+                <td>
+                    <ul>
+                        <p>
+                            Todos los elementos html pueden tener atributos</br>
+                            <li>El <b>href</b> atributo de *a* especifica la URL de la pagina a la que va el enlace</li>
+                            <li>El <b>src</b> atributo de *img* especifica la ruta a la imagen que se mostrará</li>
+                            <li>Los atributos <b>width y height</b> de *img* proporcionan informacion sobre el tamaño de la imagen</li>
+                            <li>El <b>alt</b> atributo de *img* proporciona un texto alternativo para una imagen</li>
+                            <li>El <b>style</b> atributo se usa para agregar estilos a un elemeto, como color, fuente, tamaño y mas</li>
+                            <li>El <b>lang</b> atributo de *html* declara el idioma de la pagina web</li>
+                            <li>El title atributo define alguna informacion adicional sobre un elemento</li>
+                        </p>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+        <!--____________________________________ atributo style/colores-->
+        <div>
+            <div style="background-color: #1162AC; color: azure;">
+                <h2><b>Colores</b></h2>
+            </div>
+            
+            <p>Hay una gran variedad de combinaciones de colores que puedes aplicar en HTML.</p>
+            <p>
+                Podemos utilizar el atributo style para darle estilo a un elemento. En este caso para darle color a un parrafo 
+                podemos utilizar:</br>
+                <ul>
+                    <li>
+                        &lt;p style="color:red;"&gt; : Formato nombre del color
+                    </li>
+                    <li>
+                        &lt;p style="color:#ff0000;"&gt; : Formato Hexadecimal
+                    </li>
+                    <li>
+                        &lt;p style="color:rgb(255, 0, 0);"&gt; : Formato RGB
+                    </li>
+                </ul>
+            </p>
+            <p style="color:rgb(255, 0, 0);">Este es un parrafo en color rojo.</p>
+            <a href="https://www.html6.es/t18_colores.html" target="_blank"> Aquí puedes ver ejemplos de Colores y degradados</a>
+        </div>
+        <!--____________________________________-->
+        <div>
+            <div style="background-color: #1162AC; color: azure;">
+                <h2>Atributo de href</h2>
+            </div>
+            
+            <p>
+                Los hipervinculos son definidos usando la etiqueta &lt;a&gt;.Use el atributo <b>href=""</b> para definir la direccion de destino del Hipervinculo.</br>
+                Ejemplo: &lt;a href="aqui va la direccion"&gt; texto para ir al link&lt;/a&gt;... 
+                <a href="http://reporteroescolar.unir.net/2017/wp-content/uploads/2017/01/todo-bien.png">Probando la direccion</a>
+            </p>
+        </div>
+
+         <!--____________________________________-->
+        <div>
+            <div style="background-color: #1162AC; color: azure;">
+                <h2>Atributo src con contenido multimedia</h2>
+            </div>
+            
+            <div>
+                <h3><ins>Imagen</ins></h3>
+                <img src="http://reporteroescolar.unir.net/2017/wp-content/uploads/2017/01/todo-bien.png"width="125"height="100" align="left"/>
+                <p>
+                    La etiqueta &lt;img&gt; es usada para insertar una imagen. No contiene una etiqueta de cierre.
+                    La URL de la imagen (direccion) puede ser definida usando el atributo <b>src=""</b>. Ejemplo:</br>
+                    &lt;img src="image.jpg"/&gt;... </br>
+                    
+                    Se puede modificar la altura de la imagen con el atributo <b>height</b>;.</br>
+                    Se puede modificar la anchura de la imagen con el atributo <b>width</b>.</br>
+                    Se utilizan de la siguiente manera &lt;img src="image.jpg" width="125" height="100"&gt;</br>
+                    El atributo <b>alt=""</b> especifica un texto alternativo que describe la imagen.
+                </p>
+            </div>
+            <div>
+                <h3><ins>Audio</ins></h3>
+                <p>
+                    La etiqueta &lt;audio&gt; es usada para reproducir un archivo de audio en HTML. Podemos agregar los controles de 
+                    reproducción, pausa y sonido con la etiqueta &lt;controls&gt;. Ejemplo: 
+                </p>
+                <pre style="background-color: rgb(193, 193, 193);">
+                    <code>
+                        &lt;audio src="./Mcpe_xp_ sound.mp3" controls &lt;/audio&gt;
+                    </code>
+                </pre>
+                <audio src="./Mcpe_xp_ sound.mp3" controls></audio>
+            </div>
+            <div>
+                <h3><ins>Video</ins></h3>
+                <p>
+                    La etiqueta &lt;video&gt; es usada para reproducir un archivo de video en HTML. Podemos agregar los controles de 
+                    reproducción, pausa y sonido con el atributo <b>controls</b>.Ejemplo: 
+                </p>
+                <pre style="background-color: rgb(193, 193, 193);">
+                    <code>
+                        &lt;video  src="ruta de video" controls&gt;&lt;/video&gt;
+                    </code>
+                </pre>
+                <div align="center">
+                    <video src="./Rana_xd.mp4"  controls></video>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--========================================= FIN ATRIBUTOS-->
+    <!--========================================= FORMULARIOS-->
+    <section>
+        <div>
+            <div style="background-color: #1162AC; color: azure;">
+               <h2>Formularios</h2> 
+            </div>
+            
+            <p>
+                Para crear un formulario en HTML se utiliza la etiqueta &lt;form&gt; y dentro de esta podemos agregar 
+                los siguientes elementos: 
+            </p>
+            <table border="1">
+                <th>tipo</th>
+                <th>descripción</th>
+                <tr>
+                    <td>
+                        &lt;label for=""&gt;
+                    </td>
+                    <td>
+                        Muestra una etiqueta de información
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        &lt;input type="text"&gt;
+                    </td>
+                    <td>
+                        Muestra un campo de entrada de texto de una sola línea
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        &lt;input type="radio"&gt;
+                    </td>
+                    <td>
+                        Muestra un botón de radio (para seleccionar una de las muchas opciones)
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        &lt;input type="checkbox"&gt;
+                    </td>
+                    <td>
+                        Muestra una casilla de verificación (para seleccionar cero o más de muchas opciones)
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        &lt;input type="submit"&gt;
+                    </td>
+                    <td>
+                        Muestra un botón de envío (para enviar el formulario)
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        &lt;input type="button"&gt;
+                    </td>
+                    <td>
+                        Muestra un botón en el que se puede hacer clic
+                    </td>
+                </tr>
+            </table>
+            <p>
+                <ins>Ejemplo de codigo y visualización</ins>
+            </p>
+        </div>
+        <div>
+            <pre style="background-color: rgb(193, 193, 193);">
+                <code>
+            &lt;form action=""&gt;
+                &lt;label for=""&gt;Nombre&lt;/label&gt;
+                &lt;input type="text"&gt;&lt;br&gt;
+                &lt;label for=""&gt;Apellido&lt;/label&gt;
+                &lt;input type="text"&gt;&lt;br&gt;
+                &lt;label for=""&gt;Tienes dinero&lt;/label>&lt;br&gt;
+                &lt;input type="radio" name="selec" id="si"&gt;
+                &lt;label for="si"&gt;Si&lt;/label&gt;
+                &lt;input type="radio" name="selec" id="no"&gt;
+                &lt;label for="no"&gt;No&lt;/label&gt;&lt;br&gt;
+                &lt;input type="checkbox" name="" id="hombre"&gt;
+                &lt;label for="Hombre"&gt;Hombre&lt;/label&gt; &lt;br&gt;
+                &lt;input type="checkbox" name="" id="Mujer"&gt;
+                &lt;label for="Mujer"&gt;Mujer&lt;/label&gt;&lt;br&gt;
+                &lt;input type="submit" value="enviar"&gt;&lt;br&gt;
+                &lt;input type="button" value="solo presiona"&gt;
+            &lt;/form&gt;
+                </code>
+            </pre>
+        </div>
+        <div>
+            <form action="">
+                <label for="">Nombre</label>
+                <input type="text"><br>
+                <label for="">Apellido</label>
+                <input type="text"><br>
+                <label for="">Tienes dinero</label><br>
+                <input type="radio" name="selec" id="si">
+                <label for="si">Si</label>
+                <input type="radio" name="selec" id="no">
+                <label for="no">No</label><br>
+                <input type="checkbox" name="" id="hombre">
+                <label for="Hombre">Hombre</label> <br>
+                <input type="checkbox" name="" id="Mujer">
+                <label for="Mujer">Mujer</label><br>
+                <input type="submit" value="enviar"><br>
+                <input type="button" value="solo presiona">
+            </form>
+        </div>
+    </section>
+    <hr>
+    <footer >
+        <h2>DATOS</h2>
+        <div>
+            <img src="./miFoto.jpg" alt="mi foto" width="150" height="195" align="left"/>
+            <p>Estudiante: Asbel Jaén </p>
+            <p> Cedula: 8-1006-1766</p>
+            <p> Carrera: Lic.de Ingeniería en Informática</p>
+            <p> Correo: asbel.jaen01@up.ac.pa</p>
+            <a href="https://www.w3schools.com/html/default.asp">Referencia de HTML</a>
+        </div>
+    </footer>
+</body>
+</html>
